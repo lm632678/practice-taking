@@ -11,7 +11,7 @@ var candy = function (ratings) {
     }
     for (let i = len - 1; i > 0; --i) {
         if (ratings[i] < ratings[i - 1]) num[i - 1] = Math.max(num[i - 1], num[i] + 1);
-    }
+    }`············````
     return num.reduce((prev, next) => prev + next);
 };
 candy([1, 0, 2])
